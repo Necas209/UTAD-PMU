@@ -1,11 +1,10 @@
 # UTAD-PMU
-PMU
 
 Departamento de Engenharias
 Escola de Ciências e Tecnologia
 Universidade de Trás-os-Montes e Alto Douro
 
-Documentação e exemplos da Unidade Curricular de Programação Multipplataforma.
+Documentação e exemplos da Unidade Curricular de Programação Multiplataforma.
 
 Curso(s):
 
