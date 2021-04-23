@@ -35,5 +35,15 @@ namespace WPFApp5
             else
                 lvAvaliacoes.Items.Add("Reprovado (" + nota + ")");
         }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

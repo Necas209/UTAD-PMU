@@ -26,8 +26,6 @@ namespace WPFApp5
             InitializeComponent();
             app = App.Current as App;
 
-            this.Loaded += MainWindow_Loaded;
-            this.Closed += MainWindow_Closed;
             app.ModelNotas.NotaMensagem += ModelNotas_NotaMensagem;
         }
 
@@ -49,6 +47,11 @@ namespace WPFApp5
         private void btAdicionar_Click(object sender, RoutedEventArgs e)
         {
             app.ModelNotas.Adiciona(tbNotas.Text);
+        }
+
+        private void Window_Closed(object sender, EventArgs e)
+        {
+
         }
     }
 }
