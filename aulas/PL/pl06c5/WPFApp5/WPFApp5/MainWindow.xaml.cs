@@ -27,8 +27,8 @@ namespace WPFApp5
             //Ligação à App
             app = App.Current as App;
 
-            this.Loaded += MainWindow_Loaded;
-            this.Closed += MainWindow_Closed;
+         //   this.Loaded += MainWindow_Loaded;
+         //   this.Closed += MainWindow_Closed;
         }
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
