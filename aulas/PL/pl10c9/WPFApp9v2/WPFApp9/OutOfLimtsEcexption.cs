@@ -8,7 +8,7 @@ namespace WPFApp9
 {
     public class OutOfLimitsException : System.ApplicationException
     {
-        public int Charge;
+        public int Charge { get; private set; }
         public OutOfLimitsException(string msg, int ActualCharge) : base(msg)
         {
             Charge = ActualCharge;

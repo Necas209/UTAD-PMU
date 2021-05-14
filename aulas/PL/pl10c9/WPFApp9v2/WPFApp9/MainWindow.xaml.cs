@@ -54,7 +54,7 @@ namespace WPFApp9
             {
                 app.Bateria.Descharge(10);
             } catch (OutOfLimitsException erro) {
-                //                MessageBox.Show(erro.Message, "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
+                //MessageBox.Show(erro.Message, "Erro", MessageBoxButton.OK, MessageBoxImage.Error);
                 MessageBox.Show(erro.Message, "Erro! Carga atual = " + erro.Charge + "%", MessageBoxButton.OK, MessageBoxImage.Error);
             }
         }
