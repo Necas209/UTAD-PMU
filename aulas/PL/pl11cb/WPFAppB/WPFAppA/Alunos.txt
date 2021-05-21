@@ -1,0 +1,3 @@
+﻿2986;Francisco Pereira;EEC;Inscrito
+12021;Antonio Sousa;TIC;Inscrito
+2922;Luis Barbosa;INF;NaoInscrito
