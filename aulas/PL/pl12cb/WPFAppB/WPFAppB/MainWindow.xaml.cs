@@ -16,7 +16,7 @@ using System.Windows.Shapes;
 using Microsoft.Win32;
 
 
-namespace WPFAppA
+namespace WPFAppB
 {
     /// <summary>
     /// Interaction logic for MainWindow.xaml

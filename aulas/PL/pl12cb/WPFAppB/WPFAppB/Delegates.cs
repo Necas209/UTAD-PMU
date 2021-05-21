@@ -1,4 +1,4 @@
-﻿namespace WPFAppA
+﻿namespace WPFAppB
 {
     public delegate void voidNoArgs();
 }

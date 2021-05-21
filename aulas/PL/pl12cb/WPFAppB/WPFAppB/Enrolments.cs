@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 using System.IO;
 
-namespace WPFAppA
+namespace WPFAppB
 {
     public class Enrolments
     {
