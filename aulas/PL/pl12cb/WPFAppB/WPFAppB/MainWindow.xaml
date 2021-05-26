@@ -1,0 +1,24 @@
+﻿<Window x:Class="WPFAppB.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFAppB"
+        mc:Ignorable="d"
+        Title="Gestão de Inscrições de Alunos" Height="400" Width="360">
+    <Grid>
+        <Menu HorizontalAlignment="Left" Height="32" VerticalAlignment="Top" Width="360">
+            <MenuItem Header="Ficheiro" Height="32" Width="100">
+                <MenuItem Header="Abrir" HorizontalAlignment="Left" Height="30" Width="140">
+                    <MenuItem Header="Texto" HorizontalAlignment="Left" Height="32" Width="140" Click="MenuItem_AbrirTXT_Click" />
+                    <MenuItem Header="XML" HorizontalAlignment="Left" Height="32" Width="140" Click="MenuItem_AbrirXML_Click" />
+                </MenuItem>
+                <MenuItem Header="Guardar" HorizontalAlignment="Left" Height="32" Width="140">
+                    <MenuItem Header="Texto" HorizontalAlignment="Left" Height="32" Width="140" Click="MenuItem_GuardarTXT_Click" />
+                    <MenuItem Header="XML" HorizontalAlignment="Left" Height="32" Width="140" Click="MenuItem_GuardarXML_Click" />
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        <TreeView x:Name="tvAlunos" HorizontalAlignment="Left" Height="320" Margin="10,32,0,0" VerticalAlignment="Top" Width="330" SelectedItemChanged="TvAlunos_SelectedItemChanged" />
+    </Grid>
+</Window>
