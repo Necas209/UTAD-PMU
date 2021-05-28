@@ -80,8 +80,8 @@ namespace WPFAppB
             foreach (var fields in regists)
             {
                 Student student = new Student(fields.Attribute("Numero").Value,
-                                                 fields.Element("Nome").Value,
-                                                 fields.Element("Curso").Value);
+                                                  fields.Element("Nome").Value,
+                                                  fields.Element("Curso").Value);
                 student.Subscribed = true;
                 students.Add(student.Number, student);
             }
@@ -91,8 +91,8 @@ namespace WPFAppB
             foreach (var fields in regists)
             {
                 Student student = new Student(fields.Attribute("Numero").Value,
-                                                 fields.Element("Nome").Value,
-                                                 fields.Element("Curso").Value);
+                                                  fields.Element("Nome").Value,
+                                                  fields.Element("Curso").Value);
                 student.Subscribed = false;
                 students.Add(student.Number, student);
             }
@@ -116,8 +116,8 @@ namespace WPFAppB
             foreach (Student student in students.Values)
             {
                 XElement xstudent = new XElement("Aluno", new XAttribute("Numero", student.Number),
-                                    new XElement("Nome", student.Name),
-                                    new XElement("Curso", student.Course));
+                                                          new XElement("Nome", student.Name),
+                                                          new XElement("Curso", student.Course));
 
                 if (student.Subscribed == true)
                     xdoc.Element("Alunos").Element("Inscritos").Add(xstudent);

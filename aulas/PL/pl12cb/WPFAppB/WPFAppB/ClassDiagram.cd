@@ -6,7 +6,9 @@
       <HashCode>AAAAAAAAAAAECAAIEAAAAAAAAAAAAACAACABAQAgAAA=</HashCode>
       <FileName>MainWindow.xaml.cs</FileName>
     </TypeIdentifier>
-    <Lollipop Position="0.2" />
+    <ShowAsAssociation>
+      <Field Name="app" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="WPFAppB.App">
     <Position X="12.25" Y="2.75" Width="1.5" />
