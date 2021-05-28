@@ -27,8 +27,9 @@ namespace WPFApp9
 
             app = App.Current as App;
             app.Bateria.ChargeChanged += Bateria_ChargeChanged;
-            this.Title = "Gestão de Bateria - " + app.Bateria.ChargeValue + "%"; 
-            pbBateria.Value = app.Bateria.ChargeValue;
+            Bateria_ChargeChanged(app.Bateria.ChargeValue);
+            //pbBateria.Value = app.Bateria.ChargeValue;
+            //this.Title = "Gestão de Bateria - " + app.Bateria.ChargeValue + "%"; 
         }
 
         private void Bateria_ChargeChanged(int cargaAtual)

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WPFApp9"
         mc:Ignorable="d"
-        Title="Gestão de Bateria" Height="160" Width="524">
+        Title="" Height="160" Width="524">
     <Grid>
         <ProgressBar x:Name="pbBateria" HorizontalAlignment="Left" Height="100" Margin="70,10,0,0" VerticalAlignment="Top" Width="372"/>
         <Button x:Name="btDescarregar" Content="-" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Width="48" Height="100" FontSize="64" Click="btDescarregar_Click"/>
