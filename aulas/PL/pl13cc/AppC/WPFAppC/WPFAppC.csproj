@@ -59,10 +59,10 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
-    <Compile Include="..\IoTAppC\delegates.cs">
+    <Compile Include="..\ClassLibraryModelSoma\delegates.cs">
       <Link>delegates.cs</Link>
     </Compile>
-    <Compile Include="..\IoTAppC\ModelSoma.cs">
+    <Compile Include="..\ClassLibraryModelSoma\ModelSoma.cs">
       <Link>ModelSoma.cs</Link>
     </Compile>
     <Compile Include="App.xaml.cs">

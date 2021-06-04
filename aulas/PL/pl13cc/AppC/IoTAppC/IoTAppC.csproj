@@ -116,14 +116,18 @@
     <RestoreProjectStyle>PackageReference</RestoreProjectStyle>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="..\ClassLibraryModelSoma\delegates.cs">
+      <Link>delegates.cs</Link>
+    </Compile>
+    <Compile Include="..\ClassLibraryModelSoma\ModelSoma.cs">
+      <Link>ModelSoma.cs</Link>
+    </Compile>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="delegates.cs" />
     <Compile Include="MainPage.xaml.cs">
       <DependentUpon>MainPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="ModelSoma.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
