@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<!--Listagem de alunos-->
+<Alunos>
+  <Inscritos>
+    <Aluno Numero="2986">
+      <Nome>Francisco Pereira</Nome>
+      <Curso>EEC</Curso>
+    </Aluno>
+    <Aluno Numero="12021">
+      <Nome>Antonio Sousa</Nome>
+      <Curso>TIC</Curso>
+    </Aluno>
+  </Inscritos>
+  <NaoInscritos>
+    <Aluno Numero="2922">
+      <Nome>Luis Barbosa</Nome>
+      <Curso>INF</Curso>
+    </Aluno>
+  </NaoInscritos>
+</Alunos>

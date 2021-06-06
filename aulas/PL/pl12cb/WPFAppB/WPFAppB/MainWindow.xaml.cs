@@ -15,7 +15,6 @@ using System.Windows.Shapes;
 
 using Microsoft.Win32;
 
-
 namespace WPFAppB
 {
     /// <summary>
@@ -35,9 +34,9 @@ namespace WPFAppB
             app.Enrolments.ReadEnded += Model_Inscricoes_LeituraTerminada;
             app.Enrolments.EnrolmentsUpdated += Model_Inscricoes_LeituraTerminada;
             app.Enrolments.WriteEnded += Model_Inscricoes_EscritaTerminada;
-    }
+        }
 
-    private void Model_Inscricoes_LeituraTerminada()
+        private void Model_Inscricoes_LeituraTerminada()
         {
             TreeViewItem inscritos = new TreeViewItem();
             inscritos.Header = "Inscritos";
