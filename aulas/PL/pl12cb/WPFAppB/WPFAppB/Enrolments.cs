@@ -75,13 +75,14 @@ namespace WPFAppB
         {
             XDocument doc = XDocument.Load(file);
 
-            var regists = from student in doc.Element("Alunos").Element("Inscritos").Descendants("Aluno") select student;
+            var regists = from student in doc.Element("Alunos").Element("Inscritos").Descendants("Aluno")
+                          select student;
 
             foreach (var fields in regists)
             {
                 Student student = new Student(fields.Attribute("Numero").Value,
-                                                 fields.Element("Nome").Value,
-                                                 fields.Element("Curso").Value);
+                                              fields.Element("Nome").Value,
+                                              fields.Element("Curso").Value);
                 student.Subscribed = true;
                 students.Add(student.Number, student);
             }
@@ -91,8 +92,8 @@ namespace WPFAppB
             foreach (var fields in regists)
             {
                 Student student = new Student(fields.Attribute("Numero").Value,
-                                                 fields.Element("Nome").Value,
-                                                 fields.Element("Curso").Value);
+                                              fields.Element("Nome").Value,
+                                              fields.Element("Curso").Value);
                 student.Subscribed = false;
                 students.Add(student.Number, student);
             }
@@ -116,14 +117,15 @@ namespace WPFAppB
             foreach (Student student in students.Values)
             {
                 XElement xstudent = new XElement("Aluno", new XAttribute("Numero", student.Number),
-                                    new XElement("Nome", student.Name),
-                                    new XElement("Curso", student.Course));
+                                                          new XElement("Nome", student.Name),
+                                                          new XElement("Curso", student.Course));
 
                 if (student.Subscribed == true)
                     xdoc.Element("Alunos").Element("Inscritos").Add(xstudent);
                 else
                     xdoc.Element("Alunos").Element("NaoInscritos").Add(xstudent);
             }
+
             xdoc.Save(file);
 
             if (WriteEnded != null)
