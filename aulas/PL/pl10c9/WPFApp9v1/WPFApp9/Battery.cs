@@ -12,6 +12,10 @@ namespace WPFApp9
 
         public event voidArgInt ChargeChanged;
 
+        public Battery()
+        {
+            ChargeValue = 50;
+        }
         public void Charge(int delta)
         {
             if ((ChargeValue + delta) > 100)

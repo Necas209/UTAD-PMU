@@ -7,9 +7,9 @@
       <FileName>App.xaml.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
-      <Property Name="ModelNotas" />
       <Property Name="WindowNotas" />
       <Property Name="WindowAvaliacoes" />
+      <Property Name="ModelNotas" />
     </ShowAsAssociation>
   </Class>
   <Class Name="WPFApp5.MainWindow">
@@ -24,7 +24,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="WPFApp5.ModelNotas">
-    <Position X="11.5" Y="3.25" Width="1.5" />
+    <Position X="12" Y="3.25" Width="1.5" />
     <NestedTypes>
       <Delegate Name="WPFApp5.ModelNotas.DelegacaoNotaAdicionada" Collapsed="true">
         <TypeIdentifier>
@@ -63,7 +63,7 @@
     <Lollipop Position="0.2" />
   </Class>
   <Class Name="System.Collections.Generic.List&lt;T&gt;" Collapsed="true">
-    <Position X="13.75" Y="4.75" Width="1.5" />
+    <Position X="14.5" Y="4.75" Width="1.5" />
     <TypeIdentifier />
     <Lollipop Position="0.2" />
   </Class>
